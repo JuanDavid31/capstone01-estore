@@ -121,10 +121,7 @@ h1 {
 .pager-options {
   right: 0px;
   bottom: 0px;
-}
-
-.container-item {
-  max-height: ;
+  cursor: pointer;
 }
 
 .images-grid {
