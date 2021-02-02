@@ -1,0 +1,156 @@
+:root {
+  --pink-color: #d35266;
+  --gray-color: #888888;
+  --black-gray-color: #383838;
+  --section-gray-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: gotham-bold, sans-serif;
+  src: url(fonts/GothamBold.ttf);
+}
+
+@font-face {
+  font-family: gotham-light, sans-serif;
+  src: url(fonts/GothamRounded-Light.woff2);
+}
+
+@font-face {
+  font-family: helvetive-neue, sans-serif;
+  src: url(fonts/HelveticaNeueMedium.woff2);
+}
+
+@font-face {
+  font-family: helvetica-neue-bold, sans-serif;
+  src: url(fonts/HelveticaNeueBold.woff2);
+}
+
+.t-gotham-font {
+  font-family: gotham;
+}
+
+.t-gotham-light-font {
+  font-family: gotham;
+}
+
+.t-helvetica-neue-font {
+  font-family: gotham;
+}
+
+.t-helvetica-neue-bold-font {
+  font-family: gotham;
+}
+
+.t-pink-color {
+  color: var(--pink-color);
+}
+
+.t-gray-color {
+  color: var(--gray-color);
+}
+
+.t-black-gray-color {
+  color: var(--black-gray-color);
+}
+
+.t-bg-pink-color {
+  background-color: var(--pink-color);
+}
+
+.t-bg-gray-color {
+  background-color: var(--gray-color);
+}
+
+.t-bg-black-gray-color {
+  background-color: var(--black-gray-color);
+}
+
+.t-bg-section-gray-color {
+  background-color: var(--section-gray-color);
+}
+
+body {
+  font-size: 14px;
+}
+
+/* ===============
+        Nav 
+===============*/
+
+.logo {
+  height: 30px;
+  width: 30px;
+}
+
+.search-container {
+  background: url(img/logo-dark.svg) 1rem center / cover no-repeat var(--pink-color);
+}
+
+.pager-options {
+  right: 0px;
+  bottom: 0px;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "a";
+  column-gap: 30px;
+}
+
+.first-column {
+  grid-area: a;
+}
+
+.second-column {
+  grid-area: b;
+}
+
+.third-column {
+  grid-area: c;
+}
+
+.fourth-column {
+  grid-area: d;
+}
+
+@media (min-width: 768px) {
+  .images-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b";
+  }
+}
+
+@media (min-width: 992px) {
+  .images-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b c d";
+  }
+}
+
+.carousel-action {
+  height: 40px;
+  width: 40px;
+}
+
+.section-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-header {
+  border-bottom: 2px solid var(--pink-color);
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+}
