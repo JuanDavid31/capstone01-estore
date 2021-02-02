@@ -8,310 +8,350 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <nav class="t-bg-black-gray-color p-2 d-flex justify-content-between">
-    <div class="banner d-flex align-items-center">
-      <img class="logo" src="img/logo.svg" alt="Logo">
-      <h3 class="d-inline-block text-white m-0 lh-sm ms-2">ZATTIX</h3>
+  <nav class="t-bg-black-gray-color p-2">
+    <div class="container-xl d-flex">
+      <div class="banner d-flex align-items-center">
+        <img class="logo" src="img/logo.svg" alt="Logo">
+        <h3 class="d-inline-block text-white m-0 lh-sm ms-2">ZATTIX</h3>
+      </div>
+      <ul class="nav-options list-inline t-gray-color m-0 d-flex align-items-center ms-auto ms-lg-3">
+        <a href="#"><li class="fs-6 list-inline-item ms-3 me-0 t-pink-color"><i class="bi bi-house-fill"></i> <span class="d-none d-md-inline">HOME</span> </li></a>
+        <a href="#" class="t-gray-color"><li class="fs-6 list-inline-item ms-3 me-0"><i class="bi bi-card-list"></i> <span class="d-none d-md-inline">COLLECTIONS</span> </li></a>
+        <a href="#" class="t-gray-color"><li class="fs-6 list-inline-item ms-3 me-0"><i class="bi bi-cart4"></i> <span class="d-none d-md-inline">PURCHASE LIST</span> </li></a>
+        <a href="#" class="d-none d-lg-block btn t-bg-pink-color ms-3 me-0 text-white rounded-0">POST AN AD</a>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center ms-auto">
+        <i class="bi bi-envelope-fill t-gray-color"></i>
+        <h3 class="mb-0 d-inline fs-5 text-white mx-3">Jhon Doe</h3>
+        <img class="avatar rounded-circle" src="img/avatar.jfif" alt="Avatar">
+      </div>
     </div>
-    <ul class="nav-options list-inline t-gray-color m-0 d-flex align-items-center">
-      <a href="#"><li class="fs-6 list-inline-item ms-3 me-0 t-pink-color"><i class="bi bi-house-fill"></i> <span class="d-none d-md-inline">HOME</span> </li></a>
-      <a href="#" class="t-gray-color"><li class="fs-6 list-inline-item ms-3 me-0"><i class="bi bi-card-list"></i> <span class="d-none d-md-inline">COLLECTIONS</span> </li></a>
-      <a href="#" class="t-gray-color"><li class="fs-6 list-inline-item ms-3 me-0"><i class="bi bi-cart4"></i> <span class="d-none d-md-inline">PURCHASE LIST</span> </li></a>
-    </ul>
   </nav>
-  <section class="search-container p-3">
-    <h2 class="text-center text-white">ZATTIX</h2>
-    <p class="text-center text-white">Buying And Selling Couldn't be Simpler than this!</p>
-    <form>
-      <select class="form-control mb-2 rounded-0">
-        <option value="All departments">All departments</option>
-        <option value="Shoes">Shoes</option>
-        <option value="Toys">Toys</option>
-      </select>
-      <input class="form-control mb-2 rounded-0" type="text" placeholder="What do you search for?">
-      <input class="form-control mb-2 rounded-0" type="text" placeholder="Enter tags">
-      <button class="w-100 p-2 t-bg-black-gray-color t-gray-color fs-6 border-0 " type="submit">Search</button>
-    </form>
-  </section>
-  <section class="hot-ads p-3">
-    <h4 class="t-gray-color">HOT ADS</h4>
-    <div id="carouselHotAdsControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active ">
-          <div class="img-pager position-relative d-flex justify-content-center">
-            <img class="img-fluid" src="img/tennis1.jpg" alt="Shoes">
-            <div class="pager-options position-absolute d-flex">
-              <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
-              <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
-            </div>
-          </div>
-          <div class="ad-details">
-            <h5 class="t-pink-color fw-bold">Tellenzi</h5>
-            <p class="t-gray-color fw-bold">
-              Black men's sports tennis made of textile, elastic band on the right to left side 
-              and on the upper for a better fit, to tie, gray line on the upper, TR sole, a national product of excellent design quality and comfort.
-            </p>
-            <p class="t-gray-color">
-              <span class="fw-bold">By:</span> John Doe <br>
-              <span class="fw-bold">Location:</span> San Francisco, US
-            </p>
-            <div class="d-flex">
-              <button class="btn t-bg-pink-color text-white rounded-0 rounded-start border-dark">30$</button>
-              <button class="btn t-bg-pink-color text-white rounded-0 rounded-end border-dark"> <i class="bi bi-cart4"></i> Purchase details</button>
-            </div>
-          </div>
+  <section class="search-container p-3 d-flex flex-column justify-content-center align-items-center">
+    <div class="big-container">
+      <h1 class="text-center text-white">ZATTIX</h1>
+      <p class="text-center text-white">Buying And Selling Couldn't be Simpler than this!</p>
+      <form class="row gx-lg-1">
+        <div class="col-lg-2">
+          <select class="form-control mb-2 rounded-0">
+            <option value="All departments">All departments</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Toys">Toys</option>
+          </select>
         </div>
-        <div class="carousel-item">
-          <div class="img-pager position-relative">
-            <img class="img-fluid" src="img/tennis2.jpg" alt="Shoes">
-            <div class="pager-options position-absolute d-flex">
-              <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
-              <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
-            </div>
-          </div>
-          <div class="ad-details">
-            <h5 class="t-pink-color fw-bold">US Polo Assn</h5>
-            <p class="t-gray-color fw-bold">
-              Gender: Male Product Type: Tennis Color: White-Navy Blue Activity: Casual Closure Type: Lace Outer Material: Textile.
-              Finished: Vulcanized Recommendation: You can try it on before requesting the change.
-            </p>
-            <p class="t-gray-color">
-              <span class="fw-bold">By:</span> Jane Doe <br>
-              <span class="fw-bold">Location:</span> Paris, France
-            </p>
-            <div class="d-flex">
-              <button class="btn t-bg-pink-color text-white rounded-0 rounded-start border-dark">30$</button>
-              <button class="btn t-bg-pink-color text-white rounded-0 rounded-end border-dark"> <i class="bi bi-cart4"></i> Purchase details</button>
-            </div>
-          </div>
+        <div class="col-lg-4">
+          <input class="form-control mb-2 rounded-0" type="text" placeholder="What do you search for?">
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselHotAdsControls" role="button" data-bs-slide="prev">
-        <span class="px-2 py-1 fs-6 carousel-action bg-white border-1 rounded-circle"><i class="t-pink-color bi bi-chevron-left"></i></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselHotAdsControls" role="button" data-bs-slide="next">
-        <span class="px-2 py-1 fs-6 rounded-circle carousel-action bg-white border-1"><i class="t-pink-color bi bi-chevron-right"></i></span>
-        <span class="visually-hidden">Next</span>
-      </a>
+        <div class="col-lg-4">
+          <input class="form-control mb-2 rounded-0" type="text" placeholder="Enter tags">
+        </div>
+        <div class="col-lg-2">
+          <a href="/detail.html" class="w-100 p-2 t-bg-black-gray-color t-gray-color fs-6 border-0 text-decoration-none text-center" type="submit">Search</a>
+        </div>
+      </form>
     </div>
   </section>
-  <main class="border-top border-bottom">
-    <section class="p-3 t-bg-section-gray-color">
-      <div class="section-header d-flex align-items-center border-bottom mb-4">
-        <img class="section-icon" src="img/sneakers.svg" alt="Shoes">
-        <h3 class="ms-3 mb-0 t-gray-color">Shoes</h3>
-        <a href="#" class="t-pink-color text-decoration-none ms-auto fw-bold mt-2">View More</a>
-      </div>
-      <div class="position-relative">
-        <div class="carousel-inner images-grid">
-          <div class="card first-column">
-            <img class="img-fluid card-img-top" src="img/tennis1.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Tellenzi</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">San Francisco,</span> US</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">30$</h6>
+  <section class="hot-ads p-3 d-flex justify-content-center">
+    <div class="big-container">
+      <h4 class="t-gray-color">HOT ADS</h4>
+      <div id="carouselHotAdsControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="d-md-flex">
+              <div class="img-pager position-relative d-flex justify-content-center me-md-3">
+                <img class="img-fluid" src="img/tennis1.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between">
+                <h5 class="t-pink-color fw-bold">Tellenzi</h5>
+                <p class="t-gray-color fw-bold">
+                  Black men's sports tennis made of textile, elastic band on the right to left side 
+                  and on the upper for a better fit, to tie, gray line on the upper, TR sole, a national product of excellent design quality and comfort.
+                  <span class="d-none d-lg-block">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa reiciendis corrupti inventore totam est eius? 
+                    Quasi veritatis atque incidunt magni mollitia impedit quam quo et libero praesentium. Obcaecati, beatae molestiae.
+                  </span>
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">By:</span> John Doe <br>
+                  <span class="fw-bold">Location:</span> San Francisco, US
+                </p>
+                <div class="d-flex">
+                  <button class="btn t-bg-pink-color text-white rounded-0 rounded-start border-dark">30$</button>
+                  <button class="btn t-bg-pink-color text-white rounded-0 rounded-end border-dark"> <i class="bi bi-cart4"></i> Purchase details</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card second-column d-none d-md-block">
-            <img class="img-fluid card-img-top" src="img/tennis2.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">US Polo Assn</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Paris,</span> France</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">40$</h6>
+          <div class="carousel-item">
+            <div class="d-md-flex">
+              <div class="img-pager position-relative me-md-3">
+                <img class="img-fluid" src="img/tennis2.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
               </div>
-            </div>
-          </div>  
-          <div class="card third-column d-none d-lg-block">
-            <img class="img-fluid card-img-top" src="img/tennis3.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">US Polo Assn</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Berna,</span> Switzerland</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">70$</h6>
-              </div>
-            </div>
-          </div>
-          <div class="card fourth-column d-none d-lg-block">
-            <img class="img-fluid card-img-top" src="img/tennis4.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Berkshire Polo Club</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Bergamo,</span> Italy</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">55$</h6>
-              </div>
-            </div>
-          </div>          
-        </div>
-        <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 start-0"><i class="bi bi-chevron-left"></i></span>
-        <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 end-0"><i class="bi bi-chevron-right"></i></span>
-      </div>
-    </section>
-    <section class="p-3 t-bg-section-gray-color">
-      <div class="section-header d-flex align-items-center border-bottom mb-4 pb-3">
-        <img class="section-icon" src="img/toys.svg" alt="Shoes">
-        <h3 class="ms-3 mb-0 t-gray-color">Toys</h3>
-        <a href="#" class="t-pink-color text-decoration-none ms-auto fw-bold mt-3">View More</a>
-      </div>
-      <div class="position-relative">
-        <div class="carousel-inner images-grid">
-          <div class="first-column card">
-            <img class="img-fluid card-img-top" src="img/toys.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Basic Figures</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Ohio,</span> US</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">15$</h6>
-              </div>
-            </div>
-          </div>
-          <div class="card d-none d-md-block">
-            <img class="img-fluid card-img-top" src="img/toys2.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Cars Kit</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Rome,</span> Italy</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">20$</h6>
-              </div>
-            </div>
-          </div>
-          <div class="card d-none d-lg-block">
-            <img class="img-fluid card-img-top" src="img/toys3.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Pressable toys</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Berlin,</span> Germany</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">30$</h6>
-              </div>
-            </div>
-          </div>
-          <div class="card d-none d-lg-block">
-            <img class="img-fluid card-img-top" src="img/toys4.jpg" alt="Shoes">
-            <div class="card-body">
-              <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Batman Castle</h6>
-              <p class="t-pink-color fw-bold mb-1">New</p>
-              <p class="card-text t-gray-color">From: <span class="fw-bold">Valencia,</span> Spain</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
-                <h6 class="t-pink-color fw-bold">45$</h6>
+              <div class="ad-details d-flex flex-column justify-content-between">
+                <h5 class="t-pink-color fw-bold">US Polo Assn</h5>
+                <p class="t-gray-color fw-bold">
+                  Gender: Male Product Type: Tennis Color: White-Navy Blue Activity: Casual Closure Type: Lace Outer Material: Textile.
+                  Finished: Vulcanized Recommendation: You can try it on before requesting the change.
+                  <span class="d-none d-lg-block">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime consectetur, ut quo praesentium veritatis 
+                    eaque at explicabo dignissimos ullam consequuntur sed fugit delectus! Tempora, odio aspernatur consequuntur fugit non assumenda?
+                  </span>
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">By:</span> Jane Doe <br>
+                  <span class="fw-bold">Location:</span> Paris, France
+                </p>
+                <div class="d-flex">
+                  <button class="btn t-bg-pink-color text-white rounded-0 rounded-start border-dark">30$</button>
+                  <button class="btn t-bg-pink-color text-white rounded-0 rounded-end border-dark"> <i class="bi bi-cart4"></i> Purchase details</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 start-0"><i class="bi bi-chevron-left"></i></span>
-        <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 end-0"><i class="bi bi-chevron-right"></i></span>
+        <a class="carousel-control-prev justify-content-md-start" href="#carouselHotAdsControls" role="button" data-bs-slide="prev">
+          <span class="px-2 py-1 fs-6 carousel-action bg-white border-1 rounded-circle"><i class="t-pink-color bi bi-chevron-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next justify-content-md-end" href="#carouselHotAdsControls" role="button" data-bs-slide="next">
+          <span class="px-2 py-1 fs-6 rounded-circle carousel-action bg-white border-1"><i class="t-pink-color bi bi-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </a>
       </div>
-    </section>  
+    </div>
+  </section>
+  <main class="border-top border-bottom d-flex justify-content-center t-bg-section-gray-color px-3">
+    <div class="big-container">
+      <section class="py-3 px-lg-0">
+        <div class="section-header d-flex align-items-end border-bottom mb-4">
+          <img class="section-icon" src="img/sneakers.svg" alt="Shoes">
+          <h3 class="ms-3 mb-3 t-gray-color">Shoes</h3>
+          <span class="d-none d-md-inline t-gray-color mb-3 ms-2">(Sneakers, Boots, formal shoes, casual shoes)</span>
+          <a href="#" class="t-pink-color text-decoration-none ms-auto fw-bold mb-3 mt-2">View More</a>
+        </div>
+        <div class="position-relative">
+          <div class="carousel-inner images-grid">
+            <div class="card first-column">
+              <img class="img-fluid card-img-top" src="img/tennis1.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Tellenzi</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">San Francisco,</span> US</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">30$</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card second-column d-none d-md-block">
+              <img class="img-fluid card-img-top" src="img/tennis2.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">US Polo Assn</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Paris,</span> France</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">40$</h6>
+                </div>
+              </div>
+            </div>  
+            <div class="card third-column d-none d-lg-block">
+              <img class="img-fluid card-img-top" src="img/tennis3.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">US Polo Assn</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Berna,</span> Switzerland</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">70$</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card fourth-column d-none d-lg-block">
+              <img class="img-fluid card-img-top" src="img/tennis4.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Berkshire Polo Club</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Bergamo,</span> Italy</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">55$</h6>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 start-0"><i class="bi bi-chevron-left"></i></span>
+          <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 end-0"><i class="bi bi-chevron-right"></i></span>
+        </div>
+      </section>
+      <section class="py-3 px-lg-0">
+        <div class="section-header d-flex align-items-end border-bottom mb-4 pb-3">
+          <img class="section-icon" src="img/toys.svg" alt="Shoes">
+          <h3 class="ms-3 mb-3 t-gray-color">Toys</h3>
+          <span class="d-none d-md-inline t-gray-color mb-3 ms-2">(Mattel, Hot Wheels, Hasbro, Barbie, Lego)</span>
+          <a href="#" class="t-pink-color text-decoration-none ms-auto fw-bold mb-3 mt-3">View More</a>
+        </div>
+        <div class="position-relative">
+          <div class="carousel-inner images-grid">
+            <div class="first-column card">
+              <img class="img-fluid card-img-top" src="img/toys.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Basic Figures</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Ohio,</span> US</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">15$</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img class="img-fluid card-img-top" src="img/toys2.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Cars Kit</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Rome,</span> Italy</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">20$</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card d-none d-lg-block">
+              <img class="img-fluid card-img-top" src="img/toys3.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Pressable toys</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Berlin,</span> Germany</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">30$</h6>
+                </div>
+              </div>
+            </div>
+            <div class="card d-none d-lg-block">
+              <img class="img-fluid card-img-top" src="img/toys4.jpg" alt="Shoes">
+              <div class="card-body">
+                <h6 class="card-title fw-bold t-gray-color mb-1">Mattel Batman Castle</h6>
+                <p class="t-pink-color fw-bold mb-1">New</p>
+                <p class="card-text t-gray-color">From: <span class="fw-bold">Valencia,</span> Spain</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#" class="btn border px-2 py-1"><i class="bi bi-plus"></i></a>
+                  <h6 class="t-pink-color fw-bold">45$</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 start-0"><i class="bi bi-chevron-left"></i></span>
+          <span class="px-2 py-1 fs-1 t-black-gray-color position-absolute top-50 end-0"><i class="bi bi-chevron-right"></i></span>
+        </div>
+      </section> 
+    </div> 
   </main>
-  <section class="border-top border-bottom p-3 row">
-    <div class="col-12 col-md-6 order-md-2">
-      <div class="banner d-flex align-items-center justify-content-center mb-3">
-        <img class="footer-logo" src="img/logo-gray.svg" alt="Logo">
-        <h3 class="d-inline-block t-gray-color m-0 lh-sm ms-2">ZATTIX</h3>
+  <section class="border-top border-bottom p-3 m-0 d-flex justify-content-center">
+    <div class="big-container row gx-0 gx-md-3">
+      <div class="col-12 col-md-6 col-lg-3 order-md-2 ps-lg-0 order-lg-0">
+        <div class="banner d-flex align-items-center justify-content-center mb-3">
+          <img class="footer-logo" src="img/logo-gray.svg" alt="Logo">
+          <h3 class="d-inline-block t-gray-color m-0 lh-sm ms-2">ZATTIX</h3>
+        </div>
+        <p class="t-gray-color fw-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim ipsa modi, 
+          officiis itaque explicabo voluptates architecto tempora, veniam eligendi esse sed exercitationem nisi sint voluptas fuga quos soluta. Iste.
+        </p>
       </div>
-      <p class="t-gray-color fw-bold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim ipsa modi, 
-        officiis itaque explicabo voluptates architecto tempora, veniam eligendi esse sed exercitationem nisi sint voluptas fuga quos soluta. Iste.
-      </p>
-    </div>
-    <div class="col-12 col-md-6 order-md-0">
-      <h6 class="t-pink-color pb-1 footer-header fw-bold">CATEGORIES</h6>
-      <ul class="list-unstyled d-flex flex-wrap fw-bold t-gray-color">
-        <li class="w-50">Real Estate</li>
-        <li class="w-50">Real Estate</li>
-        <li class="w-50">Automotives</li>
-        <li class="w-50">Automotives</li>
-        <li class="w-50">Electronics</li>
-        <li class="w-50">Electronics</li>
-        <li class="w-50">Clothing</li>
-        <li class="w-50">Clothing</li>
-        <li class="w-50">Fashion</li>
-        <li class="w-50">Fashion</li>
-        <li class="w-50">Kids</li>
-        <li class="w-50">Kids</li>
-        <li class="w-50">Food & Drink</li>
-        <li class="w-50">Food & Drink</li>
-      </ul>
-    </div>
-    <div class="col-12 col-md-6 order-1 mb-5">
-      <h6 class="t-pink-color pb-1 footer-header fw-bold">NAVIGATION</h6>
-      <ul class="list-unstyled fw-bold t-gray-color">
-        <li>Home</li>
-        <li>Sign In</li>
-        <li>Sign Up</li>
-        <li>Terms & Conditions</li>
-        <li>FAQ</li>
-        <li>Help</li>
-      </ul>
-    </div>
-    <div class="col-12 col-md-6 order-md-3">
-      <form class="row mb-2">
-        <div class="col-3">
-          <label for="country" class="col-form-label t-pink-color fw-bold">Country</label>
-        </div>
-        <div class="col-auto flex-grow-1">
-          <select id="country" class="form-control" >
-            <option value="1">Switzerland</option>
-            <option value="2">France</option>
-            <option value="3">US</option>
-          </select>
-        </div>
-      </form>
-      <form class="row mb-2">
-        <div class="col-3">
-          <label for="country" class="col-form-label t-pink-color fw-bold">Language</label>
-        </div>
-        <div class="col-auto flex-grow-1">
-          <select id="country" class="form-control" >
-            <option value="1">English</option>
-            <option value="2">German</option>
-            <option value="3">French</option>
-          </select>
-        </div>
-      </form>
-      <form class="row mb-2">
-        <div class="col-3">
-          <label for="country" class="col-form-label t-pink-color fw-bold">Currency</label>
-        </div>
-        <div class="col-auto flex-grow-1">
-          <select id="country" class="form-control" >
-            <option value="1">US Dolar</option>
-            <option value="2">Euro</option>
-            <option value="3">Pound Sterling</option>
-          </select>
-        </div>
-      </form>
+      <div class="col-12 col-md-6 col-lg-3 order-md-0 order-lg-1">
+        <h6 class="t-pink-color pb-1 footer-header fw-bold">CATEGORIES</h6>
+        <ul class="list-unstyled d-flex flex-wrap fw-bold t-gray-color">
+          <li class="w-50">Real Estate</li>
+          <li class="w-50">Real Estate</li>
+          <li class="w-50">Automotives</li>
+          <li class="w-50">Automotives</li>
+          <li class="w-50">Electronics</li>
+          <li class="w-50">Electronics</li>
+          <li class="w-50">Clothing</li>
+          <li class="w-50">Clothing</li>
+          <li class="w-50">Fashion</li>
+          <li class="w-50">Fashion</li>
+          <li class="w-50">Kids</li>
+          <li class="w-50">Kids</li>
+          <li class="w-50">Food & Drink</li>
+          <li class="w-50">Food & Drink</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 order-1 order-lg-2 mb-5">
+        <h6 class="t-pink-color pb-1 footer-header fw-bold">NAVIGATION</h6>
+        <ul class="list-unstyled fw-bold t-gray-color">
+          <li>Home</li>
+          <li>Sign In</li>
+          <li>Sign Up</li>
+          <li>Terms & Conditions</li>
+          <li>FAQ</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 order-md-3 pe-lg-0 order-lg-3">
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="country" class="col-form-label t-pink-color fw-bold">Country</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="country" class="form-control" >
+              <option value="1">Switzerland</option>
+              <option value="2">France</option>
+              <option value="3">US</option>
+            </select>
+          </div>
+        </form>
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="country" class="col-form-label t-pink-color fw-bold">Language</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="country" class="form-control" >
+              <option value="1">English</option>
+              <option value="2">German</option>
+              <option value="3">French</option>
+            </select>
+          </div>
+        </form>
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="country" class="col-form-label t-pink-color fw-bold">Currency</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="country" class="form-control" >
+              <option value="1">US Dolar</option>
+              <option value="2">Euro</option>
+              <option value="3">Pound Sterling</option>
+            </select>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
-  <footer class="t-gray-color p-3">
-    <p>Copyright 2015 Zattix.com. All Rights Reserved. Designeed by Mohammed Awad</p>
-    <ul class="list-inline social-media">
-      <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-google"></i></li></a>
-      <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-youtube"></i></li></a>
-      <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-twitter"></i></li></a>
-      <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-facebook"></i></li></a>
-      <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-linkedin"></i></li></a>
-    </ul>
+  <footer class="t-gray-color p-3 d-md-flex justify-content-center align-items-center">
+    <div class="big-container d-md-flex justify-content-between">
+      <p class="m-md-0">Copyright 2015 Zattix.com. All Rights Reserved. Designeed by Mohammed Awad</p>
+      <ul class="list-inline social-media m-0">
+        <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-google"></i></li></a>
+        <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-youtube"></i></li></a>
+        <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-twitter"></i></li></a>
+        <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-facebook"></i></li></a>
+        <a href="#" class="t-gray-color ms-2"><li class="list-inline-item"><i class="fs-6 bi bi-linkedin"></i></li></a>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>

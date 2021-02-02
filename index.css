@@ -73,6 +73,32 @@ body {
   font-size: 14px;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.big-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
 /* ===============
         Nav 
 ===============*/
@@ -82,8 +108,14 @@ body {
   width: 30px;
 }
 
+.avatar {
+  height: 40px;
+  width: 40px;
+}
+
 .search-container {
-  background: url(img/logo-dark.svg) 1rem center / cover no-repeat var(--pink-color);
+  background: url(img/logo-dark.svg) 1rem center / 550px no-repeat var(--pink-color);
+  min-height: 300px;
 }
 
 .pager-options {
@@ -91,12 +123,16 @@ body {
   bottom: 0px;
 }
 
+.container-item {
+  max-height: ;
+}
+
 .images-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "a";
-  column-gap: 30px;
+  column-gap: 15px;
 }
 
 .first-column {
