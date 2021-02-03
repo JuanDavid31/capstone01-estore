@@ -113,7 +113,7 @@ h1 {
 }
 
 .search-container {
-  background: url(img/logo-dark.svg) 1rem center / 550px no-repeat var(--pink-color);
+  background: url(../img/logo-dark.svg) 1rem center / 550px no-repeat var(--pink-color);
   min-height: 300px;
 }
 
