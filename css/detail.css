@@ -1,0 +1,10 @@
+.custom-room {
+  height: 24px;
+  width: 40px;
+}
+
+@media (min-width: 992px) {
+  .filter-options {
+    border-right: 1px solid #dee2e6;
+  }
+}

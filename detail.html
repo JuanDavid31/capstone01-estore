@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+  <nav class="t-bg-black-gray-color p-2">
+    <div class="container-xl d-flex">
+      <a class="banner d-flex align-items-center text-decoration-none" href="./index.html">
+        <img class="logo" src="img/logo.svg" alt="Logo">
+        <h3 class="d-inline-block text-white m-0 lh-sm ms-2">ZATTIX</h3>
+      </a>
+      <ul class="nav-options list-inline t-gray-color m-0 d-flex align-items-center ms-auto ms-lg-3">
+        <li class="fs-6 list-inline-item ms-3 me-0">
+          <a href="#" class="text-decoration-none t-pink-color"><i class="bi bi-house-fill"></i> <span class="d-none d-md-inline">HOME</span></a>
+        </li>
+        <li class="fs-6 list-inline-item ms-3 me-0">
+          <a href="#" class="text-decoration-none t-gray-color"><i class="bi bi-card-list"></i> <span class="d-none d-md-inline">COLLECTIONS</span></a>
+        </li>
+        <li class="fs-6 list-inline-item ms-3 me-0">
+          <a href="#" class="text-decoration-none t-gray-color"><i class="bi bi-cart4"></i> <span class="d-none d-md-inline">PURCHASE LIST</span></a>
+        </li>
+        <li><a href="#" class="text-decoration-none d-none d-lg-block btn t-bg-pink-color ms-3 me-0 text-white rounded-0">POST AN AD</a></li>
+      </ul>
+      <div class="d-none d-lg-flex align-items-center ms-auto">
+        <i class="bi bi-envelope-fill t-gray-color"></i>
+        <h3 class="mb-0 d-inline fs-5 text-white mx-3">Jhon Doe</h3>
+        <img class="avatar rounded-circle" src="img/avatar.jfif" alt="Avatar">
+      </div>
+    </div>
+  </nav>
+  <section class="search-container p-3 d-flex flex-column justify-content-center align-items-center">
+    <div class="big-container">
+      <h1 class="text-center text-white">ZATTIX</h1>
+      <p class="text-center text-white">Search around 124.000 items are waiting to be sold!</p>
+      <form class="row gx-lg-1">
+        <div class="col-lg-2">
+          <select class="form-control mb-2 rounded-0">
+            <option value="All departments">All departments</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Toys">Toys</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <input class="form-control mb-2 rounded-0" type="text" placeholder="What do you search for?">
+        </div>
+        <div class="col-lg-4">
+          <input class="form-control mb-2 rounded-0" type="text" placeholder="Enter tags">
+        </div>
+        <div class="col-lg-2">
+          <button class="w-100 p-2 t-bg-black-gray-color t-gray-color fs-6 border-0 d-block" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <main class="border-top border-bottom d-flex justify-content-center t-bg-section-gray-color px-3 pb-3">
+    <div class="big-container">
+      <section class="p-3 pt-0 px-lg-0 row">
+        <div class="col-12 col-lg-3 pt-3 filter-options">
+          <form class="row t-gray-color mb-3">
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rent">
+                <label class="form-check-label" for="rent">
+                  Rent
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="ownership">
+                <label class="form-check-label" for="ownership">
+                  Ownership
+                </label>
+              </div>
+            </div>
+            <h5 class="border-bottom t-black-gray-color pb-2">Type</h5>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="entire-place">
+                <label class="form-check-label" for="entire-place">
+                  Entire Place
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="private-room">
+                <label class="form-check-label" for="private-room">
+                  Private Room
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="shared-room">
+                <label class="form-check-label" for="shared-room">
+                  Shared Room
+                </label>
+              </div>
+            </div>
+            <h5 class="border-bottom t-black-gray-color pb-2">Size</h5>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="2-4-rooms">
+                <label class="form-check-label" for="2-4-rooms">
+                  2-4 Rooms
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="5+rooms">
+                <label class="form-check-label" for="5+rooms">
+                  5+ Rooms
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="custom-room">
+                <label class="form-check-label" for="custom-room">
+                  Custom
+                </label>
+                <input type="text" class="form-control custom-room d-inline" placeholder="">
+              </div>
+            </div>
+            <h5 class="border-bottom t-black-gray-color pb-2">Price Range</h5>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="100dollars">
+                <label class="form-check-label" for="100dollars">
+                  10$ - 100$
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="500dollars">
+                <label class="form-check-label" for="500dollars">
+                  100$ - 500$
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="1000dollars">
+                <label class="form-check-label" for="1000dollars">
+                  500$ - 1000$
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="morethan1000dollars">
+                <label class="form-check-label" for="morethan1000dollars">
+                  + 1000$
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-9 pt-3 ps-lg-0">
+          <p class="border-bottom pb-3 ps-lg-3"> 
+            <span class="fw-bold">128</span> Results for <span class="fw-bold">"Flat"</span> Search at 
+            <span class="fw-bold">San Francisco</span> in Category <span class="fw-bold">Real Estate</span>
+          </p>
+          <div class="results">
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/search1.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">House - The nests. 4 guests, 2 bedrooms, 3 beds, 3 bathrooms</h5>
+                <h6 class="t-pink-color mb-3">170 M, Rent</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> Guatape, Next to the main avenue
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">23 Nov, 2019</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">420$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search2.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Big house. 8 guests, 5 bedrooms, 6 beds, 5 bathrooms</h5>
+                <h6 class="t-pink-color mb-3">270 M, Ownership</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> Mountainview, Middle of the forest
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">23 Jan, 2020</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">720$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search3.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Small House - The nests. 2 guests, 2 bedrooms, 2 beds, 1 bathroom</h5>
+                <h6 class="t-pink-color mb-3">70 M, Rent</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> Bluesky, Close to the river
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">23 Jul, 2016</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">120$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search4.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Very good looking house. 4 guests, 4 bedrooms, 4 beds, 2 bathrooms</h5>
+                <h6 class="t-pink-color mb-3">200 M, Ownership</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> The green, before de beach
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">2 Aug, 2014</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">560$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search2.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Big house. 8 guests, 5 bedrooms, 6 beds, 5 bathrooms</h5>
+                <h6 class="t-pink-color mb-3">270 M, Ownership</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> Mountainview, Middle of the forest
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">23 Jan, 2020</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">720$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search3.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Small House - The nests. 2 guests, 2 bedrooms, 2 beds, 1 bathroom</h5>
+                <h6 class="t-pink-color mb-3">70 M, Rent</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> Bluesky, Close to the river
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">23 Jul, 2016</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">120$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="result-item d-md-flex border-bottom ps-lg-3 pb-4 mb-3 border-top pt-4">
+              <div class="img-pager position-relative d-flex justify-content-center mb-2 mb-md-0 me-md-3">
+                <img class="img-fluid" src="img/Search4.jpg" alt="Shoes">
+                <div class="pager-options position-absolute d-flex">
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-start"><i class="t-pink-color bi bi-chevron-left"></i></span>
+                  <span class="t-bg-black-gray-color px-2 py-1 fs-6 rounded-end"><i class="t-pink-color bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+              <div class="ad-details d-flex flex-column justify-content-between justify-content-lg-start">
+                <h5 class="t-black-gray-color fw-bold">Very good looking house. 4 guests, 4 bedrooms, 4 beds, 2 bathrooms</h5>
+                <h6 class="t-pink-color mb-3">200 M, Ownership</h6>
+                <p class="t-gray-color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo nesciunt nemo voluptates eius cupiditate eaque? 
+                  Eum soluta, incidunt eveniet, ea, natus esse nemo consectetur dolorem architecto provident tenetur nulla!
+                </p>
+                <p class="t-gray-color">
+                  <span class="fw-bold">Location:</span> The green, before de beach
+                </p>
+                <div class="d-flex justify-content-between align-items-center mt-lg-auto">
+                  <p class="mb-0 t-gray-color">2 Aug, 2014</p>
+                  <div>
+                    <button class="btn t-bg-pink-color text-white border-dark">Give a Call</button>
+                    <button class="btn t-bg-pink-color text-white border-dark">560$</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <section class="border-top border-bottom p-3 m-0 d-flex justify-content-center">
+    <div class="big-container row gx-0 gx-md-3">
+      <div class="col-12 col-md-6 col-lg-3 order-md-2 ps-lg-0 order-lg-0">
+        <div class="banner d-flex align-items-center justify-content-center mb-3">
+          <img class="footer-logo" src="img/logo-gray.svg" alt="Logo">
+          <h3 class="d-inline-block t-gray-color m-0 lh-sm ms-2">ZATTIX</h3>
+        </div>
+        <p class="t-gray-color fw-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim ipsa modi, 
+          officiis itaque explicabo voluptates architecto tempora, veniam eligendi esse sed exercitationem nisi sint voluptas fuga quos soluta. Iste.
+        </p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 order-md-0 order-lg-1">
+        <h6 class="t-pink-color pb-1 footer-header fw-bold">CATEGORIES</h6>
+        <ul class="list-unstyled d-flex flex-wrap fw-bold t-gray-color">
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Real Estate</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Real Estate</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Automotives</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Automotives</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Electronics</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Electronics</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Clothing</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Clothing</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Fashion</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Fashion</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Kids</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Kids</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Food & Drink</a></li>
+          <li class="w-50"><a href="#" class="text-decoration-none t-gray-color">Food & Drink</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 order-1 order-lg-2 mb-5">
+        <h6 class="t-pink-color pb-1 footer-header fw-bold">NAVIGATION</h6>
+        <ul class="list-unstyled fw-bold t-gray-color">
+          <li><a href="#" class="text-decoration-none t-gray-color">Home</a></li>
+          <li><a href="#" class="text-decoration-none t-gray-color">Sign In</a></li>
+          <li><a href="#" class="text-decoration-none t-gray-color">Sign Up</a></li>
+          <li><a href="#" class="text-decoration-none t-gray-color">Terms & Conditions</a></li>
+          <li><a href="#" class="text-decoration-none t-gray-color">FAQ</a></li>
+          <li><a href="#" class="text-decoration-none t-gray-color">Help</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 order-md-3 pe-lg-0 order-lg-3">
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="country" class="col-form-label t-pink-color fw-bold">Country</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="country" class="form-control" >
+              <option value="1">Switzerland</option>
+              <option value="2">France</option>
+              <option value="3">US</option>
+            </select>
+          </div>
+        </form>
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="language" class="col-form-label t-pink-color fw-bold">Language</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="language" class="form-control" >
+              <option value="1">English</option>
+              <option value="2">German</option>
+              <option value="3">French</option>
+            </select>
+          </div>
+        </form>
+        <form class="row mb-2">
+          <div class="col-3 col-lg-4">
+            <label for="currency" class="col-form-label t-pink-color fw-bold">Currency</label>
+          </div>
+          <div class="col-auto flex-grow-1">
+            <select id="currency" class="form-control" >
+              <option value="1">US Dolar</option>
+              <option value="2">Euro</option>
+              <option value="3">Pound Sterling</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="t-gray-color p-3 d-md-flex justify-content-center align-items-center">
+    <div class="big-container d-md-flex justify-content-between">
+      <p class="m-md-0">Copyright 2015 Zattix.com. All Rights Reserved. Designeed by Mohammed Awad</p>
+      <ul class="list-inline social-media m-0">
+        <li class="list-inline-item"><a href="#" class="t-gray-color ms-2"><i class="fs-6 bi bi-google"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="t-gray-color ms-2"><i class="fs-6 bi bi-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="t-gray-color ms-2"><i class="fs-6 bi bi-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="t-gray-color ms-2"><i class="fs-6 bi bi-facebook"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="t-gray-color ms-2"><i class="fs-6 bi bi-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
