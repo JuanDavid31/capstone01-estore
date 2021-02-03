@@ -1,6 +1,6 @@
 :root {
   --pink-color: #d35266;
-  --gray-color: #888888;
+  --gray-color: #888;
   --black-gray-color: #383838;
   --section-gray-color: #f6f6f6;
 }
@@ -26,19 +26,19 @@
 }
 
 .t-gotham-font {
-  font-family: gotham;
+  font-family: gotham, sans-serif;
 }
 
 .t-gotham-light-font {
-  font-family: gotham;
+  font-family: gotham-light, sans-serif;
 }
 
 .t-helvetica-neue-font {
-  font-family: gotham;
+  font-family: gotham-neue, sans-serif;
 }
 
 .t-helvetica-neue-bold-font {
-  font-family: gotham;
+  font-family: helvetica-neue-bold, sans-serif;
 }
 
 .t-pink-color {
@@ -77,7 +77,6 @@ h1 {
   font-size: 32px;
 }
 
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -100,8 +99,8 @@ h1 {
 }
 
 /* ===============
-        Nav 
-===============*/
+        Nav
+=============== */
 
 .logo {
   height: 30px;
@@ -119,8 +118,8 @@ h1 {
 }
 
 .pager-options {
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   cursor: pointer;
 }
 

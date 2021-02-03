@@ -10,7 +10,7 @@ A personal approach to Zattix e-comerce website.
 
 ## Built With
 
-- HTML5 & CSS3 and Bootstrap.
+- HTML5, CSS3 & Bootstrap.
 
 ## Live Demo
 
